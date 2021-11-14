@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This passege has {{words_count}} Words</h1>
+<a href="{% url 'home' %}" > Goto Home</a> <br><br>
+{{ article }}
+<br><br>
+<h1>Total Count</h1>
+
+{% for word,num in dict_words %}
+
+
+<br>
+    <h1>{{ word }}: {{ num }}</h1>
+
+{% endfor %}
+
+
+
+dic
+</body>
+</html>

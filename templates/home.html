@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>this is home page</h1>
+<a href="{% url 'result' %}"> Goto Result Page</a>
+<form action="{% url 'result' %}">
+    {% csrf_token%}
+    <textarea cols="60" rows="10" name="article"></textarea> <br><br>
+
+    <input type="submit" name="submit">
+</form>
+
+
+</body>
+</html>
